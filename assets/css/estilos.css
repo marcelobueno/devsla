@@ -1,0 +1,78 @@
+:root {
+    --header-color: #000;
+}
+
+@font-face {
+    font-family: GothanMedium;
+    src: url('../fonts/GothamMedium.otf');
+}
+
+@font-face {
+    font-family: GothanBook;
+    src: url('../fonts/GothamBookRegular.otf');
+}
+
+body {
+    font-weight: bold;
+    font-family: 'GothamMedium', Helvetica, Arial;
+    font-size: 14px;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+header ul, header li {
+    list-style: none;
+}
+
+header .left_side .logo {
+    width: 120px;
+    margin-left: 20px;
+}
+
+header .middle ul {
+    display: flex;
+}
+
+header .middle li {
+    margin: 0 10px;
+}
+
+header .middle a {
+    text-decoration: none;
+    color: var(--header-color);
+    text-transform: uppercase;
+}
+
+header .right_side ul {
+    display: flex;
+}
+
+header .right_side li {
+    margin: 0 10px;
+}
+
+header .right_side a {
+    text-decoration: none;
+    color: var(--header-color);
+    text-transform: uppercase;
+}
+
+header .menu--icon {
+    width: 18px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+header .menu--icon div {
+    height: 2px;
+    background-color: var(--header-color);
+}
